@@ -1,4 +1,7 @@
 #+OPTIONS: toc:2
+
+[[./Video Model Demo.mov]]
+
 ** Table of Contents :toc:
   - [[#10-315-project-sentiment-analysis-with-logistic-regression-k-nn-bag-of-words-bow-tf-idf][10-315 Project: Sentiment Analysis with Logistic Regression, k-NN, Bag of Words (BOW), TF-IDF]]
   - [[#introduction][Introduction]]
