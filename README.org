@@ -1,19 +1,13 @@
 #+OPTIONS: toc:2
-* Table of Contents :toc:
-- [[#10-315-project-sentiment-analysis-with-logistic-regression-k-nn-bag-of-words-bow-tf-idf][10-315 Project: Sentiment Analysis with Logistic Regression, k-NN, Bag of Words (BOW), TF-IDF]]
-- [[#introduction][Introduction]]
-- [[#model-card][MODEL CARD]]
-  - [[#model-details][Model Details]]
-  - [[#intended-use][Intended Use]]
-  - [[#training-data][Training Data]]
-  - [[#potential-issues][Potential Issues]]
-  - [[#evaluation][Evaluation]]
-  - [[#the-machine-learning-pipeline][The Machine Learning PIPELINE]]
-- [[#references-and-citations][References and Citations]]
+** Table of Contents :toc:
+  - [[#10-315-project-sentiment-analysis-with-logistic-regression-k-nn-bag-of-words-bow-tf-idf][10-315 Project: Sentiment Analysis with Logistic Regression, k-NN, Bag of Words (BOW), TF-IDF]]
+  - [[#introduction][Introduction]]
+  - [[#model-card][MODEL CARD]]
+  - [[#references-and-citations][References and Citations]]
 
-* 10-315 Project: Sentiment Analysis with Logistic Regression, k-NN, Bag of Words (BOW), TF-IDF
+** 10-315 Project: Sentiment Analysis with Logistic Regression, k-NN, Bag of Words (BOW), TF-IDF
 
-* Introduction
+** Introduction
 - This project compares the performance of a Logistic Regression Model and a k-NN Model on a sentiment analysis task.
 - The ML task is to classify an input text, specifically a movie review, as a 'positive: 1' or 'negative: 0' review.
 - Our dataset is the [[https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews][IMDB Movie Review Dataset]]. It consists of over 10,000 movie reviews labeled with sentiment (positive or negative)
@@ -24,16 +18,18 @@
 
 - The goal of the experimental part of this project is to gain insight into how the dimensionality of the word embeddings, specifically BOW, affect the accuracy of sentiment analyisis models. We want to explore how a reduction in dimensionality, which reduces computation cost, trades off with model accuracy.
 
-* MODEL CARD
-** Model Details
+** MODEL CARD
+
+*** Model Details
 - Model name: Sentiment Analysis Model
 - Model version: 1.0
 - Date: [May 2024]
 - Model type: Logistic Regression, k-NN
 - Input: Movie reviews (text)
 - Output: Sentiment (Positive: 1; or Negative:  0)
----
-** Intended Use
+
+  
+*** Intended Use
 - The model is designed to predict sentiment (positive or negative) based on movie reviews. It can be used to analyze the sentiment of movie reviews, or any other text.
 
 - This can have many applications. For example, a company who just released a product might be interested in making a market study of the overall satisfaction with the product. A market study based on online comments (Instagram, Amazon reviews, etc) could be conducted, using this model to classify online comments into categories: "satisfied with product" or "not satisfied".
@@ -41,21 +37,21 @@
 - It has been fine-tuned to work with short text input of about 10 to 50 words.
 
   
-** Training Data
+*** Training Data
 - The model is trained on the IMDB Movie Review Dataset. The dataset consists of 10,000 movie reviews labeled
 with sentiment (positive or negative).
 
-** Potential Issues
+*** Potential Issues
 - Biased Training Data: The model's performance may be affected by biases present in the training data.
 - Overfitting: The model may overfit to the training data, resulting in poor generalization to new data.
 - Limited Vocabulary: The model may struggle with words that are not present in its vocabulary.
 - Will have trouble effective classifying reviews that contain mixed opinions
 
   
-** Evaluation
+*** Evaluation
 - The model is evaluated based on its accuracy on a test set. The accuracy is the ratio of correctly predicted  sentiments to the total number of sentiments.
 
-** The Machine Learning PIPELINE
+*** The Machine Learning PIPELINE
   0. Downloading Dataset
   1. Import Required Dependencies
   2. Import The DataFrame
@@ -68,7 +64,7 @@ with sentiment (positive or negative).
 
 
 
-* References and Citations
+** References and Citations
 - [[https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews][IMDB Moview Review Dataset]]
 
 - General structure for the logistic regression training function: CMU 10-315 Intro to ML Recitation. [10-315 Recitation 7 Slides](https://docs.google.com/presentation/d/16b1ckL1CtJ5GVEiOM9--XwCr6wysJPcSYg33zZhVgPo/edit#slide=id.g157a7f534dc_0_12)
